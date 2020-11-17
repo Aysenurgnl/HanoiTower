@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tower of Hanoi</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <h1 id="baslik">TOWER OF HANOİ SİMÜLASYONU</h1>
+    <div id="container">
+        <div id="sekil_container">
+
+            <div id="bar0"><img src="Bar.png" /></div>
+
+            <div id="bar1"><img src="Bar.png" /></div>
+
+            <div id="bar2"><img src="Bar.png" /></div>
+            <div id="bottombar"></div>
+
+            <div class="disk" id="disk0"><img class="insideImg" style="left:94px;" src="Bar2.png" /></div>
+            <div class="disk" id="disk1"><img class="insideImg" style="left:74px;" src="Bar2.png" /></div>
+            <div class="disk" id="disk2"><img class="insideImg" style="left:54px;" src="Bar2.png" /></div>
+            <div class="disk" id="disk3"><img class="insideImg" style="left:34px;" src="Bar2.png" /></div>
+            <div class="disk" id="disk4"><img class="insideImg" style="left:14px;" src="Bar2.png" /></div>
+        </div>
+        <div id="buton-container">
+            <button onclick="executeHanoi()">Başlat</button>
+
+            <label>Hızı seçiniz <select id="speedSelectList" >
+<option  value="1" >1x</option>
+<option  value="10" >2x</option>
+<option  value="20" >3x</option>
+</select>
+</label>
+
+            <label>Disk Sayısı<select id="diskSelectList" >
+<option  value="5" >5 disk</option>
+<option  value="4" >4 disk</option>
+<option  value="3" >3 disk</option>
+</select>
+</label>
+        </div>
+        <div id="img-container">
+            <h3 style="color: #808080;">PseudoCode:</h3>
+            <img id="resim" src="hanoiPseudocode.jpg" alt="tower of hanoi">
+        </div>
+    </div>
+
+</body>
+
+</html>
